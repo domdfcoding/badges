@@ -41,7 +41,7 @@ def format_download_count(num):
 	if num >= 1000000:
 		return f"{int(num/1000000)}M"
 	elif num >= 1000:
-		return f"{int(num/1000)}K"
+		return f"{int(num/1000)}k"
 	else:
 		return f"{int(num)}"
 
