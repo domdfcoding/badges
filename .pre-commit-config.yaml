@@ -4,7 +4,6 @@ ci:
   autoupdate_schedule: quarterly
 
 repos:
-
  - repo: https://github.com/pre-commit/pre-commit-hooks
    rev: v3.4.0
    hooks:
@@ -36,7 +35,7 @@ repos:
     - id: bind-requirements
 
  - repo: https://github.com/domdfcoding/flake2lint
-   rev: v0.4.2
+   rev: v0.4.3
    hooks:
     - id: flake2lint
 
@@ -63,6 +62,9 @@ repos:
     - id: forbid-crlf
 
  - repo: https://github.com/python-formate/formate
-   rev: v0.5.0
+   rev: v0.7.0
    hooks:
     - id: formate
+      exclude: ^(doc-source/conf|__pkginfo__|setup)\.(_)?py$
+
+# Custom hooks can be added below this comment
